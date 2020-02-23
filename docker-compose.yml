@@ -1,0 +1,21 @@
+version: '3'
+services:
+  mongo:
+    image: "mongo:4.2.3"
+    networks:
+      - mongonet
+    ports:
+      - 27017:27017
+  creditservice:
+    build: .
+    ports:
+      - 8080:8080
+    expose:
+      - "8080"
+    depends_on:
+      - mongo
+    networks:
+      - mongonet
+networks:
+  mongonet:
+    driver: bridge

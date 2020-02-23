@@ -1,0 +1,12 @@
+[
+  {
+    "identityNumber": 1,
+    "creditScore": 499,
+    "_class": "com.app.credit.Entity.CreditScore"
+  },
+  {
+    "identityNumber": 2,
+    "creditScore": 501,
+    "_class": "com.app.credit.Entity.CreditScore"
+  }
+]
